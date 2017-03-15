@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		B404201F1E785267001A0E06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B404201E1E785267001A0E06 /* AppDelegate.swift */; };
-		B40420211E785267001A0E06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40420201E785267001A0E06 /* ViewController.swift */; };
-		B40420241E785267001A0E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40420221E785267001A0E06 /* Main.storyboard */; };
 		B40420261E785267001A0E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40420251E785267001A0E06 /* Assets.xcassets */; };
 		B40420291E785267001A0E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40420271E785267001A0E06 /* LaunchScreen.storyboard */; };
+		B40420321E7852DF001A0E06 /* QZLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40420311E7852DF001A0E06 /* QZLoginVC.swift */; };
+		B40420351E785312001A0E06 /* QZMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40420341E785312001A0E06 /* QZMain.storyboard */; };
+		B40420381E78587B001A0E06 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40420371E78587B001A0E06 /* Extension.swift */; };
+		B404203B1E786096001A0E06 /* QZLoginWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B404203A1E786095001A0E06 /* QZLoginWS.swift */; };
+		B404203D1E78A37F001A0E06 /* QZWelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B404203C1E78A37F001A0E06 /* QZWelcomeVC.swift */; };
+		B404203F1E78ABA1001A0E06 /* QZUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B404203E1E78ABA1001A0E06 /* QZUser.swift */; };
+		B40420421E78ACF2001A0E06 /* QZQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40420411E78ACF2001A0E06 /* QZQuestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B404201B1E785267001A0E06 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B404201E1E785267001A0E06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B40420201E785267001A0E06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B40420231E785267001A0E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B40420251E785267001A0E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B40420281E785267001A0E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B404202A1E785267001A0E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B40420311E7852DF001A0E06 /* QZLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QZLoginVC.swift; path = ViewControllers/QZLoginVC.swift; sourceTree = "<group>"; };
+		B40420341E785312001A0E06 /* QZMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = QZMain.storyboard; path = StoryBoards/QZMain.storyboard; sourceTree = "<group>"; };
+		B40420371E78587B001A0E06 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = Extensions/Extension.swift; sourceTree = "<group>"; };
+		B404203A1E786095001A0E06 /* QZLoginWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QZLoginWS.swift; path = Webservices/QZLoginWS.swift; sourceTree = "<group>"; };
+		B404203C1E78A37F001A0E06 /* QZWelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QZWelcomeVC.swift; path = ViewControllers/QZWelcomeVC.swift; sourceTree = "<group>"; };
+		B404203E1E78ABA1001A0E06 /* QZUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QZUser.swift; path = Model/QZUser.swift; sourceTree = "<group>"; };
+		B40420411E78ACF2001A0E06 /* QZQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QZQuestion.swift; path = Model/QZQuestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,59 @@
 		B404201D1E785267001A0E06 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				B40420401E78ABA5001A0E06 /* Models */,
+				B40420391E785F29001A0E06 /* Webservices */,
+				B40420361E78570B001A0E06 /* Extensions */,
+				B40420301E785281001A0E06 /* ViewControllers */,
+				B40420331E7852E9001A0E06 /* StoryBoards */,
 				B404201E1E785267001A0E06 /* AppDelegate.swift */,
-				B40420201E785267001A0E06 /* ViewController.swift */,
-				B40420221E785267001A0E06 /* Main.storyboard */,
 				B40420251E785267001A0E06 /* Assets.xcassets */,
 				B40420271E785267001A0E06 /* LaunchScreen.storyboard */,
 				B404202A1E785267001A0E06 /* Info.plist */,
 			);
 			path = Quiz;
+			sourceTree = "<group>";
+		};
+		B40420301E785281001A0E06 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B40420311E7852DF001A0E06 /* QZLoginVC.swift */,
+				B404203C1E78A37F001A0E06 /* QZWelcomeVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B40420331E7852E9001A0E06 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				B40420341E785312001A0E06 /* QZMain.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		B40420361E78570B001A0E06 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B40420371E78587B001A0E06 /* Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B40420391E785F29001A0E06 /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				B404203A1E786095001A0E06 /* QZLoginWS.swift */,
+			);
+			name = Webservices;
+			sourceTree = "<group>";
+		};
+		B40420401E78ABA5001A0E06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B404203E1E78ABA1001A0E06 /* QZUser.swift */,
+				B40420411E78ACF2001A0E06 /* QZQuestion.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +151,7 @@
 				TargetAttributes = {
 					B404201A1E785266001A0E06 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BLY6N65G69;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,9 +179,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B40420351E785312001A0E06 /* QZMain.storyboard in Resources */,
 				B40420291E785267001A0E06 /* LaunchScreen.storyboard in Resources */,
 				B40420261E785267001A0E06 /* Assets.xcassets in Resources */,
-				B40420241E785267001A0E06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +192,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B40420211E785267001A0E06 /* ViewController.swift in Sources */,
+				B404203B1E786096001A0E06 /* QZLoginWS.swift in Sources */,
+				B40420381E78587B001A0E06 /* Extension.swift in Sources */,
+				B40420421E78ACF2001A0E06 /* QZQuestion.swift in Sources */,
+				B404203D1E78A37F001A0E06 /* QZWelcomeVC.swift in Sources */,
+				B404203F1E78ABA1001A0E06 /* QZUser.swift in Sources */,
 				B404201F1E785267001A0E06 /* AppDelegate.swift in Sources */,
+				B40420321E7852DF001A0E06 /* QZLoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B40420221E785267001A0E06 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B40420231E785267001A0E06 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B40420271E785267001A0E06 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -260,11 +313,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BLY6N65G69;
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jorge.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -272,11 +327,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BLY6N65G69;
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jorge.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

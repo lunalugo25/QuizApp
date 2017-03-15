@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "QZLoginVC.(tryLogin(user : String, password : String) -&gt; ()).(closure #1):QZLoginVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "information[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static QZLoginWS.(validate(user : String, password : String, onCompletion : (Bool, String) -&gt; ()) -&gt; ()).(closure #1):QZLoginWS.swift">
+      </ContextState>
+      <ContextState
+         contextName = "QZUser.init(dictionary : [String : AnyObject]) -&gt; QZUser:QZUser.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "usuario[&quot;cuestionario&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static QZLoginWS.(validate(user : String, password : String, onCompletion : (Bool, String, [String : AnyObject]) -&gt; ()) -&gt; ()).(closure #1):QZLoginWS.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
